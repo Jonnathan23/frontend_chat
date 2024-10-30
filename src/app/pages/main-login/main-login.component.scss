@@ -1,0 +1,14 @@
+@use '../../../styles/variables' as *;
+
+main {
+    padding: 3rem 2rem;
+}
+
+.cont {
+    background-color: $whiter_cream;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;    
+    min-height: 30rem;
+}
+

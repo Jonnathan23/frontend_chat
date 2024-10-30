@@ -1,1 +1,27 @@
-<p>main-login works!</p>
+<main>
+    <div class="cont">
+        <section class="users">
+            <h3>Usuarios</h3>
+            <p>Cuál eres tu??</p>
+            @for (user of users; track user) {
+                <div class="us">
+                    <a routerLink="/chat">{{user.username}}</a>
+                </div>
+            }
+        </section>
+
+        <section class="log">
+            <h3>Registrarse</h3>
+            <form (submit)="login()" #chatForm="ngForm">
+                <div class="field">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username" id="username" required #user="ngModel" ngModel>
+                </div>
+                <div class="field">
+                    <button type="submit">Ingresar</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+</main>
