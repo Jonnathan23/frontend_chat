@@ -1,1 +1,8 @@
-<p>chat works!</p>
+<h3>My chat</h3>
+@for(msg of listMesages; track msg){
+<p>{{msg}}</p>
+}
+<form >
+    <input type="text" [(ngModel)]="message" name="message" placeholder="Escribe un mensaje" />
+    <button (click)="sendMessage()">Enviar</button>
+</form>

@@ -2,12 +2,15 @@
 
 main {
     padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .cont {
     background-color: $whiter_cream;
-    width: 90%;
-    margin: auto;
+    width: 90%;    
     padding: 2rem;    
     min-height: 30rem;
 }
